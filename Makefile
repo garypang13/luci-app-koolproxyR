@@ -30,6 +30,10 @@ endef
 define Build/Compile
 endef
 
+define Package/luci-app-koolproxyR/conffiles
+/etc/config/koolproxy
+endef
+
 define Package/luci-app-koolproxyR/postinst
 #!/bin/sh
 if [ -z "$${IPKG_INSTROOT}" ]; then
